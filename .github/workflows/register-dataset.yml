@@ -20,7 +20,11 @@ on:
         required: true
         type: string
     secrets:
-      creds:
+      AZURE_CLIENT_ID:
+        required: true
+      AZURE_TENANT_ID:
+        required: true
+      AZURE_SUBSCRIPTION_ID:
         required: true
 jobs:
   register-dataset:
